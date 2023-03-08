@@ -1,6 +1,6 @@
 'use strict';
 
-const student = [
+const students = [
     {
         id : 213,
         name : 'Marco della Rovera',
@@ -39,9 +39,16 @@ const student = [
 ];
 
 //Lista con nome studente in maiuscolo
-const studentName = student.map((student) => {
+const studentName = students.map((student) => {
     return {name: student.name.toLocaleUpperCase()};
 })
 
 console.log('Lista richiesta 1');
 studentName.forEach((element) => console.log(element.name));
+
+
+//Lista richiesta con voto superiore a 70
+const studentSuper70 = students.filter(student => student.grades > 70);
+
+console.log('Lista richiesta 2')
+studentSuper70.forEach(student => console.log(student.name + ' - ' + 'voto: ' + student.grades))
