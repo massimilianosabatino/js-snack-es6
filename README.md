@@ -40,3 +40,45 @@ Id  Name                Grades
 //Creare array da precedente, contenente tutti i nomi convertiti in uppercase  
 //Creare array da primo con i soli nomi di studenti che hanno un voto > 70  
 //Creare array da primo con i soli nomi di studenti che hanno un voto > 70 && id > 120
+
+---
+
+## SNACK 3
+Creare un array di oggetti:  
+Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.  
+Stampare in console la bici con peso minore utilizzando destructuring e template literal  
+
+## SNACK 4
+Creare un array di oggetti di squadre di calcio. Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti.  
+Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0.  
+Generare numeri random al posto degli 0 nelle proprietà: Punti fatti e falli subiti.  
+
+Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.  
+
+### BONUS
+Stampare in pagina oltre che in console!
+
+### Svolgimento
+
+#### Snack 3
+//Creare array contenente oggetti "bici" e con chiavi:
+- nome
+- peso
+//Creare array con tutti i pesi  
+//Controllare quale è il minore tra essi  
+//Assegnare ad una variabile peso minore  
+//Filtrare array oggetti estrapolando solo quello/i con peso minore  
+//Destrutturare array oggetto bici con peso minore  
+//Stampare in consle tramite template literal nome e bici e peso  
+
+#### Snack 4
+//Creare array con aggetti "squadre" e con chiavi:  
+- nome (nomi diversi per squadra)  
+- puntiFatti (impostare a zero)
+- falliSubiti (impostare a zero)  
+//Assegnare a punti fatti e falli subuti un valore random  
+//Destrutturare array  
+//Creare nuovo arrai con oggetti con chiavi:  
+- nome
+- falli subiti
+//Stampare nuovo array in console
