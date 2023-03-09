@@ -23,7 +23,7 @@ const bikes = [
     },
     {
         name: 'Lombardo',
-        weight: 9
+        weight: 8
     },
     {
         name: 'Coppi',
@@ -49,12 +49,21 @@ const lighter = Math.min(...weight);
 //Compare and get lighter
 const bikeLighter = bikes.filter(element => element.weight === lighter);
 
+/* Destruttura e stampa un solo risultato
 //Destructuring
-// const [objBikeLighter] = bikeLighter;
-// const {name, weight: kg} = objBikeLighter;
+const [objBikeLighter] = bikeLighter;
+const {name, weight: kg} = objBikeLighter;
 const {name, weight: kg} = bikeLighter[0];
 
-//Print result
+//Print result - single
 console.log(`La bici più leggera in assoluto è:
 Marca bici: ${name}
 Peso: ${kg}`);
+*/
+
+//Print result
+console.log('Le bici più leggere in catalogo sono:')
+for(const {name: valN, weight: valW} of bikeLighter) {
+    console.log(`Marca bici: ${valN}
+Peso: ${valW}`);
+}
