@@ -42,12 +42,19 @@ const bikes = [
 //Make array of weight
 const weight = [];
 bikes.forEach(element => weight.push(element.weight));
-console.log(weight);
 
 //Search for smallest
 const lighter = Math.min(...weight);
-console.log(lighter);
 
 //Compare and get lighter
 const bikeLighter = bikes.filter(element => element.weight === lighter);
-console.log(bikeLighter);
+
+//Destructuring
+// const [objBikeLighter] = bikeLighter;
+// const {name, weight: kg} = objBikeLighter;
+const {name, weight: kg} = bikeLighter[0];
+
+//Print result
+console.log(`La bici più leggera in assoluto è:
+Marca bici: ${name}
+Peso: ${kg}`);
