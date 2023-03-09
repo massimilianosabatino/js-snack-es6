@@ -58,11 +58,21 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 };
 
+//Add random value to point and fouls
 teams.forEach(element => {
     for(const prop in element){
         if(prop !== 'name')
         element[prop] = getRandomInt(100);
     }
-    console.log(element)
-    
 });
+
+/*
+//New array modified
+const teamEditList = teams.map(({name, foulsSuffered}) => ({name, foulsSuffered}));
+
+//Print result
+teamEditList.forEach(element => console.log(`${element.name}, falli subuti: ${element.foulsSuffered}`));
+*/
+
+//
+const teamEditList = teams.map(({name, foulsSuffered}) => ({name, foulsSuffered})).forEach(element => console.log(`${element.name}, falli subuti: ${element.foulsSuffered}`));
