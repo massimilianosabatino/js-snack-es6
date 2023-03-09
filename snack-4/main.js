@@ -51,4 +51,18 @@ const teams = [
         pointsMade: 0,
         foulsSuffered: 0
     }
-]
+];
+
+//Get Random number
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+};
+
+teams.forEach(element => {
+    for(const prop in element){
+        if(prop !== 'name')
+        element[prop] = getRandomInt(100);
+    }
+    console.log(element)
+    
+});
