@@ -39,3 +39,15 @@ const bikes = [
     }
 ];
 
+//Make array of weight
+const weight = [];
+bikes.forEach(element => weight.push(element.weight));
+console.log(weight);
+
+//Search for smallest
+const lighter = Math.min(...weight);
+console.log(lighter);
+
+//Compare and get lighter
+const bikeLighter = bikes.filter(element => element.weight === lighter);
+console.log(bikeLighter);
