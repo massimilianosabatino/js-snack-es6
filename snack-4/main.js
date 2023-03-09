@@ -74,5 +74,5 @@ const teamEditList = teams.map(({name, foulsSuffered}) => ({name, foulsSuffered}
 teamEditList.forEach(element => console.log(`${element.name}, falli subuti: ${element.foulsSuffered}`));
 */
 
-//
+//Doconstruction
 const teamEditList = teams.map(({name, foulsSuffered}) => ({name, foulsSuffered})).forEach(element => console.log(`${element.name}, falli subuti: ${element.foulsSuffered}`));
