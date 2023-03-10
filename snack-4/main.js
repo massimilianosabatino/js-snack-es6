@@ -64,6 +64,7 @@ teams.forEach(element => {
         if(prop !== 'name')
         element[prop] = getRandomInt(100);
     }
+    //Si poteva mettere direttamente element.pointMade = getTandomInt(100); element.pointMade = getTandomInt(100); senza utilizzare il for
 });
 
 /*
